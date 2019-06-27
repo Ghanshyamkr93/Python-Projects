@@ -1,0 +1,16 @@
+#Age Calculator for 100 years completion
+import datetime as d
+
+name=input("Enter your name :")
+
+now =d.datetime.now()
+y=now.year
+try:
+    age=int(input("Enter your age: "))
+    if age != str:
+        print("Hello Mr.",name.capitalize(),". You will turn into 100 years in",((100-age)+y))
+
+except:
+    print("Please enter valid age in numeric.")
+
+
