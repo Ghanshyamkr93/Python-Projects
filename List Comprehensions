@@ -1,0 +1,14 @@
+# Code that takes this list a and makes a new list that has only the even elements of this list in it.
+num1=int(input("Enter the range of list of your choice:"))
+print("Enter a series of number")
+list1=[]
+elist=[]
+for i in range(num1):
+    list1.append(int(input()))
+a=set(list1)
+for i in a:
+    if i%2==0:
+       elist.append(i)
+    else:
+        continue
+print(elist)
