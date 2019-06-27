@@ -1,0 +1,21 @@
+#program that returns a list that contains only the elements that are common between the lists (without duplicates). 
+
+num1=int(input("Enter the range of the number of your choice:"))
+print("Enter a series of number")
+elist1=[]
+for i in range(num1):
+    elist1.append(int(input()))
+num2=int(input("Enter the range of the number of your choice:"))
+print("Enter a series of number")
+elist2=[]
+for i in range(num2):
+    elist2.append(int(input()))
+
+print(elist1)
+print(elist2)
+a=set(elist1)
+b=set(elist2)
+if (a & b):
+    print(a & b)
+else:
+    print("No Common elements")
